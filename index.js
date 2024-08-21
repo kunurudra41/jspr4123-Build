@@ -129,19 +129,19 @@ const loadInitialData = () => {
 // Spread Operator
 /**
  const obj = {
-    name: "rohan",
+    name: "rudra",
     age: 2
 }
 
 
 console.log(obj);
- {name: 'rohan', age: 2}
+ {name: 'rudra', age: 2}
 
 console.log({obj});
- {obj: {…}}obj: {name: 'rohan', age: 2}[[Prototype]]: Object
+ {obj: {…}}obj: {name: 'rudra', age: 2}[[Prototype]]: Object
 
 console.log({...obj});
- {name: 'rohan', age: 2}
+ {name: 'rudra', age: 2}
 
 //  appending or adding a new key into obj:
 console.log({...obj, designation: "mentor"});
@@ -152,18 +152,18 @@ console.log({...obj, designation: "mentor"});
  * 
 //  updating key value using spread operator
 const obj={
-    name: "rohan"
+    name: "rudra"
 }
 
 console.log(obj)
- {name: 'rohan'}
+ {name: 'rudra'}
 
 
 console.log({...obj, age : 2});
- {name: 'rohan', age: 2}
+ {name: 'rudra', age: 2}
 
 console.log({...obj, age :4});
-{name: 'rohan', age: 4}
+{name: 'rudra', age: 4}
  */
 
 /* 
