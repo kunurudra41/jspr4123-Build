@@ -19,7 +19,16 @@
       referrerpolicy="no-referrer"
     />
   </head>
-  <body>
+  <body onload="loadInitialData()">
+    <!-- <button
+      type="button"
+      class="btn btn-primary"
+      data-bs-toggle="modal"
+      data-bs-target="#showTask"
+    >
+      Launch demo modal
+    </button> -->
+
     <!-- Btn on Small Screen Size -->
     <div class="add__new__btn__mobile__only d-md-none">
       <button
@@ -52,7 +61,7 @@
             ></button>
           </div>
           <div class="modal-body">
-            <form>
+            <form onsubmit="return false">
               <!-- img -->
               <div class="mb-3">
                 <label for="imageUrl" class="form-label">Image URL</label>
@@ -61,7 +70,7 @@
                   class="form-control"
                   id="imageUrl"
                   aria-describedby="imageDesc"
-                  placeholder="https://rudra.com/image.png"
+                  placeholder="https://Rudra.com/image.png"
                 />
                 <div id="imageDesc" class="form-text">
                   Its a optional filed for you...
@@ -116,17 +125,22 @@
             >
               Close
             </button>
-            <button type="submit" class="btn btn-primary">Save changes</button>
+            <button
+              type="submit"
+              class="btn btn-primary"
+              onclick="handleSubmit()"
+            >
+              Save changes
+            </button>
           </div>
         </div>
       </div>
     </div>
 
     <!-- Open Task Modal -->
-
     <div
       class="modal fade"
-      id="exampleModal"
+      id="showTask"
       tabindex="-1"
       aria-labelledby="exampleModalLabel"
       aria-hidden="true"
@@ -134,7 +148,9 @@
       <div class="modal-dialog modal-lg">
         <div class="modal-content">
           <div class="modal-header">
-            <h1 class="modal-title fs-5" id="exampleModalLabel">Task Details..</h1>
+            <h1 class="modal-title fs-5" id="exampleModalLabel">
+              Task Details..
+            </h1>
             <button
               type="button"
               class="btn-close"
