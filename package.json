@@ -2,13 +2,22 @@
   "name": "jspr4123-build",
   "version": "1.0.0",
   "description": "lets try something new",
-  "main": "index.js",
+  "main": "servers.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node servers.js",
+    "kunurudra41": "node servers.js",
+    "dev": "nodemon servers.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://kunurudra41.github.io/jspr4123-Build/"
   },
   "author": "kunurudra41",
   "license": "ISC",
   "devDependencies": {
     "nodemon": "^3.1.4"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
   }
 }
